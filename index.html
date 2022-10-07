@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <script src="js/script.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style/styles.css">
+      <link rel="stylesheet" href="style/style.css">
+   </head>
+   <body>
+      <nav class="menu-container" id="menu-container">
+         <!-- burger menu -->
+         <input type="checkbox" aria-label="Toggle menu" />
+         <span></span>
+         <span></span>
+         <span></span>
+         <!-- logo -->
+         <a href="#" class="menu-logo">
+         <img style="width:500px; height: 150px" href="#about" src="/img/logo.png" alt="Gavaz"/>
+         </a>
+         <!-- menu items -->
+         <div class="menu">
+            <ul></ul>
+            <ul>
+               <li>
+                  <a  href="#about">
+                  About
+                  </a>
+               </li>
+               <li>
+                  <a href="#skills">
+                  Skills
+                  </a>
+               </li>
+               <li>
+                  <a href="#works">
+                  Works
+                  </a>
+               </li>
+               <li>
+                  <a href="#contact">
+                  Contact
+                  </a>
+               </li>
+               <li>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                  Resume
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div oncontextmenu="return false;" id="fullPage" style="background-color: rgb(0, 0, 0);">
+         <div class="section s1" id="about">
+            <section class="about">
+               <span style="z-index: 999;">
+                  <h1>Hi I am</h1>
+                  <h1 class="mimic">Gavaz</h1>
+               </span>
+               <h5 id="bio"></h5>
+               <a href="#skills" class="scroll"><span></span>Scroll</a>
+               <div class="svg_background"></div>
+            </section>
+         </div>
+         <div class="section s2">
+            <section id="skills" class="skills_frame">
+               <h1>My Skills</h1>
+               <div class="skills-container">
+                  <div class="skill-box">
+                     <div class="skill-header-box">
+                        <h2 class="skill-header" id="head1">Graphic Designer</h2>
+                     </div>
+                     <span class="skill-text">
+                     Over 5 years of experience in Graphic Design, skilled with Photoshop, Illustrator, Cinema 4d and Blender.
+                     </span>
+                  </div>
+                  <div class="skill-box">
+                     <div class="skill-header-box">
+                        <h2 class="skill-header" id="head2">Web Developer</h2>
+                     </div>
+                     <span class="skill-text"> 
+                     Passionate about UI/UX. Over 2 years of development experience in HTML, CSS, JS, React framework.
+                     </span>
+                  </div>
+                  <div class="skill-box">
+                     <div class="skill-header-box">
+                        <h2 class="skill-header" id="head3">Software Engineer</h2>
+                     </div>
+                     <span class="skill-text">
+                     Skilled in developing C, C++, VB.Net, Java and Javascript solutions, currently learning Python.
+                     </span>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="section s3" >
+            <section class="works" id ="works">
+               <h1 style="padding-bottom: 40px;">My Works</h1>
+               <div class="container">
+                  <i class="fa fa-arrow-left" onclick="addSlide(-1)" aria-hidden="true" style="margin-right:40px;"></i>
+                  <div class="slideshow">
+                     <img id="img_art" src="img/gavamelone.png" style="height:40vh;width: 10vw;"/>
+                     <p  id="p_art" style="display: block;color:#ccc;word-break: break-all;width:150px;font-size:20pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <div class="hidden circles" id="circles">
+                        <span class="dot shown" onclick="setSlides(1)"></span>
+                        <span class="dot" onclick="setSlides(2)"></span>
+                        <span class="dot" onclick="setSlides(3)"></span>
+                     </div>
+                  </div>
+                  <i class="fa fa-arrow-right" onclick="addSlide(1)" aria-hidden="true" style="margin-left:40px;" onclick="plusSlides(1)"></i>
+               </div>
+               <button href="#" class="btn">SHOW ALL</button>
+            </section>
+         </div>
+         <div class="section s4">
+            <section class="contact" id="contact">
+               <div class="contact_container" style="z-index:2">
+                  <div class="social">
+                     <h2>Contact Info</h2>
+                     <ul class="contact_list">
+                        <li>
+                           <i class="fa fa-map-marker "aria-hidden="true"></i>
+                           <span>&nbsp;Based&nbsp;in Lombardy, Italy</span>
+                        </li>
+                        <li>
+                           <i class="fa fa-phone  "aria-hidden="true"></i>
+                           <span>&nbsp;Phone:&nbsp;</span><span class="social_info" onclick="window.open('tel:900300400')">+39 366 277 4778</span>
+                        </li>
+                        <li>
+                           <i class="fa fa-envelope" aria-hidden="true"></i>
+                           <span>&nbsp;Email:&nbsp;</span><span class="social_info" onclick="window.location.href = 'mailto:delpiiitheone@gmail.com';">delpiiitheone@gmail.com</span>
+                        </li>
+                        <li>
+                           <i class="fa fa-globe" aria-hidden="true"></i>
+                           <span>&nbsp;Website:&nbsp;</span><span class="social_info" onclick="document.location='#'">gavaz.hyperphp.com</span>
+                        </li>
+                     </ul>
+                     <ul class="social_list">
+                        <li><i class="fa-brands fa-discord fa-lg"></i></li>
+                        <li><i class="fa-brands fa-github fa-lg"></i></li>
+                        <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                     </ul>
+                  </div>
+                  <div class="form">
+                     <h2>Write Me a Message</h2>
+                     <form>
+                        <div class="form__group field name">
+                           <input autocomplete="off"type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                           <label for="name" class="form__label">Name</label>
+                        </div>
+                        <div class="form__group field phone">
+                           <input autocomplete="off"type="email" class="form__field" placeholder="Email" name="name" id='name' required />
+                           <label for="name" class="form__label">Email</label>
+                        </div>
+                        <div class="form__group field message">
+                           <textarea autocomplete="off"class="form__field"style="height:120px;" placeholder="Message" name="name" id='name' required></textarea>
+                           <label for="name" class="form__label">Message</label>
+                        </div>
+                        <button class="submit button-52">SUBMIT</button>
+                     </form>
+                  </div>
+               </div>
+               <div class="blob_container" style="position: absolute;z-index:1">
+                  <img style="width: 1650px;" class="contact_image" src="img/blob.png">
+               </div>
+            </section>
+         </div>
+      </div>
+      <div class="cursor"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+         new fullpage("#fullPage", {
+            responsiveWidth: 767,
+            autoscrolling: true
+         });
+      </script>
+      <style>
+      </style>
+   </body>
+</html>
