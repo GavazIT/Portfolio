@@ -2,6 +2,14 @@
  .hidden{
      display: none;
 }
+::-moz-selection { /* Code for Firefox */
+    color: #0c0c0c;
+    background: #66d9ed;
+}
+  ::selection {
+    color: #0c0c0c;
+    background: #66d9edd4;
+}
  .menu-container {
      z-index: 1;
      position: fixed;
